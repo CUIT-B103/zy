@@ -1,0 +1,22 @@
+Cluster bootstrap by video (95% CI)
+
+BASELINE=black
+center_gaussian ad10=10.339040[6.507772,14.839677] insertion=0.913250[0.904837,0.920951] deletion=0.726883[0.699714,0.755219]
+gradcam ad10=1.495828[0.808758,2.334133] insertion=0.926994[0.923109,0.930192] deletion=0.633557[0.604821,0.659999]
+vanilla ad10=39.563606[36.354928,42.409385] insertion=0.883778[0.873355,0.894231] deletion=0.685438[0.664523,0.704739]
+vanilla7 ad10=5.305407[3.398840,7.436774] insertion=0.923983[0.919265,0.927838] deletion=0.649283[0.617649,0.680798]
+RANKS ad10:gradcam=1,vanilla7=2,center_gaussian=3,vanilla=4; insertion:gradcam=1,vanilla7=2,center_gaussian=3,vanilla=4; deletion:gradcam=1,vanilla7=2,vanilla=3,center_gaussian=4
+
+BASELINE=blur
+center_gaussian ad10=6.042211[3.663188,8.822469] insertion=0.940470[0.930790,0.949118] deletion=0.796921[0.772861,0.822054]
+gradcam ad10=1.010111[0.435669,1.848717] insertion=0.955924[0.951229,0.960281] deletion=0.760435[0.730847,0.789197]
+vanilla ad10=26.340711[21.841708,31.099483] insertion=0.933912[0.924926,0.941745] deletion=0.774514[0.751367,0.798366]
+vanilla7 ad10=3.981665[2.343886,5.790219] insertion=0.952363[0.947066,0.957355] deletion=0.766224[0.735589,0.798113]
+RANKS ad10:gradcam=1,vanilla7=2,center_gaussian=3,vanilla=4; insertion:gradcam=1,vanilla7=2,center_gaussian=3,vanilla=4; deletion:gradcam=1,vanilla7=2,vanilla=3,center_gaussian=4
+
+BASELINE=gray
+center_gaussian ad10=9.666794[6.254823,13.485705] insertion=0.932205[0.923334,0.940165] deletion=0.757841[0.732285,0.782900]
+gradcam ad10=1.219708[0.558002,2.046010] insertion=0.947266[0.943870,0.950048] deletion=0.679307[0.650712,0.706644]
+vanilla ad10=15.318676[12.134789,18.900625] insertion=0.934066[0.926314,0.940812] deletion=0.716114[0.695639,0.737573]
+vanilla7 ad10=4.044900[2.567387,5.807431] insertion=0.944038[0.939404,0.947830] deletion=0.706515[0.678741,0.735267]
+RANKS ad10:gradcam=1,vanilla7=2,center_gaussian=3,vanilla=4; insertion:gradcam=1,vanilla7=2,vanilla=3,center_gaussian=4; deletion:gradcam=1,vanilla7=2,vanilla=3,center_gaussian=4

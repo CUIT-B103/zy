@@ -1,0 +1,40 @@
+{
+  "data_root": "external/FFPlusPlus_Extracted_8Frames",
+  "checkpoint": "checkpoints/resnet50_best.pt",
+  "output": "results/smoothgrad_ig/fake.csv",
+  "frames": 8,
+  "max_videos": 20,
+  "noise_samples": 30,
+  "ig_steps": 32,
+  "insertion_steps": 5,
+  "real": false,
+  "coverage": {
+    "Deepfakes": {
+      "seen": 160,
+      "accepted": 158
+    },
+    "Face2Face": {
+      "seen": 160,
+      "accepted": 154
+    },
+    "FaceShifter": {
+      "seen": 160,
+      "accepted": 157
+    },
+    "DeepFakeDetection": {
+      "seen": 160,
+      "accepted": 160
+    }
+  },
+  "attribution_target": "class_logit",
+  "metric_target": "class_probability",
+  "ad_fill": "black_pixel_0",
+  "curve_fill": "gray_pixel_0.5",
+  "normalization": "per_map_minmax",
+  "tie_rule": "torch.argsort_descending_default_same_as_main",
+  "geometry_connectivity": 8,
+  "gaussian_sigma_pixels": 4,
+  "checkpoint_sha256": null,
+  "seed": 42,
+  "torch_version": "2.3.0"
+}
